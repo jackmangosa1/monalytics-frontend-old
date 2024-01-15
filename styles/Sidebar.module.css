@@ -1,0 +1,29 @@
+.container .sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .sidebarTitle{
+    margin-left: -0.8rem;
+  }
+  .sidebarMain{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .listItem{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--sidebarTextColor);
+  }
+  .active{
+    background-color: var(--activeBackgroundColor);
+    color: var(--activeColor);
+  }

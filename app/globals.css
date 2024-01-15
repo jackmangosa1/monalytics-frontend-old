@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x:hidden;
+}
+:root{
+    --activeBackgroundColor: rgb(232,238,254);
+    --activeColor: rgb(97,55,189);
+    --sidebarTextColor: rgb(94, 92, 92);
+    --mainBackgroundColor: rgb(249,249,249);
+    --buttonColor: rgb(22,15,10);
+}
+
