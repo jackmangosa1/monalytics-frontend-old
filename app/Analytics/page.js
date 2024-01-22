@@ -1,44 +1,71 @@
 'use client';
 import { Suspense } from 'react';
-import styles from './page.module.css';
+import styles from '../../styles/Analytics.module.css';
 import { UilInstagram, UilFacebook, UilTwitter } from '@iconscout/react-unicons';
-import LineChartWrapper from './components/LineChart';
-import BarChartWrapper from './components/BarChart';
-import ProgressBar from './components/ProgressBar';
-import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Card from './components/Card';
-import CardRate from './components/CardRate';
+import LineChartWrapper from '../components/LineChart';
+import BarChartWrapper from '../components/BarChart';
+import ProgressBar from '../components/ProgressBar';
+import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
+import Card from '../components/Card';
+import CardRate from '../components/CardRate';
+import { data } from '../page'
+import CompetitorLeaderboard from '../components/CompetitorLeaderboard';
 
-export const data = [
-  {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-  },
-  {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-  },
-  {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-  },
-  {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-  },
-  {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-  },
-];
 
-export default function Home() {
+
+
+const Analytics = () => {
+
+    const personCompetitor = [
+        {
+            id:'1',
+            name: 'ken Alba',
+            point: '637',
+            photo: '../../assets/profile.jpg',
+            place: '6',
+        },
+
+        {
+            id:'2',
+            name: 'Alicce LeBeau',
+            point: '637',
+            photo: '../../assets/profile.jpg',
+            place: '7',
+        },
+
+        {
+            id:'3',
+            name: 'Adrian Lu',
+            point: '637',
+            photo: '../../assets/profile.jpg',
+            place: '8',
+        },
+    ]
+    
+        const companyCompetitor = [
+            {
+                id:'1',
+                name: 'MTN',
+                point: '637',
+                place: '6',
+            },
+    
+            {
+                id:'2',
+                name: 'AIRTEL',
+                point: '637',
+                place: '7',
+            },
+    
+            {
+                id:'3',
+                name: 'TIGO',
+                point: '637',
+                place: '8',
+            },
+         ]
+
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -58,7 +85,7 @@ export default function Home() {
           </Suspense>
         </div>
       </div>
-      <div className={styles.bottom}>
+      <div className={styles.middle}>
         <div className={styles.left}>
           <p className={styles.channelTitle}>Channels</p>
 
@@ -121,6 +148,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className={styles.competitors}>
+        <CompetitorLeaderboard data={personCompetitor}/>
+        <CompetitorLeaderboard data={personCompetitor}/>
+      </div>
+   
+
+
     </div>
   );
 }
+
+export default Analytics;

@@ -1,0 +1,21 @@
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 9.5rem;
+    height: 8rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+.lineBar{
+    margin-left: -1.5rem;
+  }
+  .rateValue{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .ratePercentage{
+    color: rgb(43,194,85);
+  }

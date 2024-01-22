@@ -29,4 +29,8 @@
     margin-top: 1rem;
     margin-bottom: 5rem;
 }
+.submitButton:hover{
+    cursor: pointer;
+    background-color: rgba(22,15,10, 0.95) ;
+}
 

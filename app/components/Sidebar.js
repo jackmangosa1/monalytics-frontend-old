@@ -15,11 +15,11 @@ const Sidebar = () => {
           <Image src={Logo} height={60} width={180}/>
         </header>
        <ul className={styles.sidebarMain}>
-          <li className={`${styles.listItem} ${styles.active}`}>
+          <li className={`${styles.listItem} ${styles.active}`} onClick={() => router.push('/')}>
             <UilEstate size={20}/>
             <p>Home</p>
           </li>
-          <li className={styles.listItem}>
+          <li className={styles.listItem} onClick={ () => router.push("/Analytics")}>
             <UilAnalytics/>
             <p>Analysis</p>
           </li>

@@ -23,6 +23,9 @@
     font-size: 0.9rem;
     color: var(--sidebarTextColor);
   }
+  .listItem:hover{
+    cursor: pointer;
+  }
   .active{
     background-color: var(--activeBackgroundColor);
     color: var(--activeColor);
